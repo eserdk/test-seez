@@ -1,5 +1,5 @@
-from app.infrastructure.repositories.car_submodel import CarSubmodelRepository
 from app.core.domain.car_submodel import CarSubmodel
+from app.infrastructure.repositories.car_submodel import CarSubmodelRepository
 
 
 class CarSubmodelService:

@@ -12,7 +12,7 @@ class CarService:
     async def list_all_cars_full(self, filtr=None):
         return [Car.from_dict(c) for c in await self.repository.get_many_full(filtr)]
 
-    async def create_new_car(self, *args, **kwargs):
-        car = Car(*args, **kwargs)
+    async def create_new_car(self, **kwargs):
+        car = Car(**kwargs)
         await self.repository.create(car)
         return car
