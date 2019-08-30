@@ -1,0 +1,20 @@
+[[source]]
+name = "pypi"
+url = "https://pypi.org/simple"
+verify_ssl = true
+
+[dev-packages]
+jupyter = "*"
+
+[packages]
+aiohttp = "*"
+motor = "*"
+uvloop = "*"
+pymongo = "*"
+pandas = "*"
+click = "*"
+pytest = "*"
+python-dateutil = "*"
+
+[requires]
+python_version = "3.7"
